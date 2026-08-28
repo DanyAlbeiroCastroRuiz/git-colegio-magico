@@ -50,8 +50,8 @@ Para los siguientes retos, ubicados en sus respectivos paquetes (`reto3`, `reto4
 
 ### 📝 Reto 10: El Pensadero y la Graduación (Pull Request)
 Al finalizar todos los retos de código, deberás enviar tu trabajo final al Gran Mago original mediante un **Pull Request**.
-1. Copia el archivo `PLANTILLA_ENTREGA.md`.
-2. Renombra la copia con tu nombre completo en mayúsculas (ejemplo: `JUAN_PEREZ_GOMEZ.md`).
+1. Copia el archivo `PLANTILLA_ENTREGA.md` y pega la copia **dentro de la carpeta** `magos_graduados/`.
+2. Renombra la copia con tu nombre completo en mayúsculas (ejemplo: `magos_graduados/JUAN_PEREZ_GOMEZ.md`).
 3. Responde a las preguntas de graduación dentro de tu nuevo archivo.
 4. Haz `add`, `commit` y `push`.
 5. Ve a tu repositorio en GitHub y abre un **Pull Request** hacia el repositorio original del colegio. *(Si no sabes cómo, consulta la [Guía de Pull Request (`assets/guia_pull_request.md`)](assets/guia_pull_request.md))*.

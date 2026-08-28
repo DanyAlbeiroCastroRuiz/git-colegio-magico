@@ -49,7 +49,7 @@ const RETOS = [
     },
     {
         title: "Reto 10: El Pensadero 💭 (Graduación)",
-        body: "🎉 **¡FELICIDADES GRAN MAGO!** 🎉\n\nHas superado todos los retos de código. Para tu graduación oficial, falta el último paso: El Pull Request.\n\n**Misión Final:**\n1. En la raíz de tu proyecto, haz una copia del archivo `PLANTILLA_ENTREGA.md`.\n2. Renombra esa copia con tu nombre completo (ej: `JUAN_PEREZ_GOMEZ.md`).\n3. Responde a las preguntas dentro del archivo.\n4. Sube tu archivo con `git add`, `git commit` y `git push`.\n5. Ve a tu repositorio en GitHub y abre un **Pull Request** hacia el repositorio original del colegio.\n\n¡Al hacer el Pull Request habrás terminado oficialmente tu entrenamiento en el Colegio Mágico! 🎓",
+        body: "🎉 **¡FELICIDADES GRAN MAGO!** 🎉\n\nHas superado todos los retos de código. Para tu graduación oficial, falta el último paso: El Pull Request.\n\n**Misión Final:**\n1. En la raíz de tu proyecto, haz una copia del archivo `PLANTILLA_ENTREGA.md`.\n2. Mueve esa copia a la carpeta `magos_graduados/` y renómbrala con tu nombre completo (ej: `magos_graduados/JUAN_PEREZ_GOMEZ.md`).\n3. Responde a las preguntas dentro del archivo.\n4. Sube tu archivo con `git add`, `git commit` y `git push`.\n5. Ve a tu repositorio en GitHub y abre un **Pull Request** hacia el repositorio original del colegio.\n\n¡Al hacer el Pull Request habrás terminado oficialmente tu entrenamiento en el Colegio Mágico! 🎓",
         testFile: null // No test required, it's the final issue.
     }
 ];
