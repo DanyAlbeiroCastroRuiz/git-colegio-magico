@@ -45,16 +45,17 @@ Para los siguientes retos, ubicados en sus respectivos paquetes (`reto3`, `reto4
 
 **Reglas de Oro del Colegio:**
 1. ⚠️ **¡PROHIBIDO MODIFICAR LAS PRUEBAS!** Bajo ninguna circunstancia puedes alterar los archivos que terminan en `Test.java` (ej. `HechizoIniciacionTest.java`). Si modificas las pruebas para hacer trampa, el Tribunal Mágico te expulsará.
-2. 🤖 **Uso de Inteligencia Artificial:** Lo ideal es que intentes resolver la lógica por tu cuenta para entrenar tu mente. Sin embargo, si te atascas, *puedes* usar IA (como ChatGPT, Gemini o Claude) **SOLO** para que te ayude a resolver la lógica del código Java.
+2. 🤖 **Uso de Inteligencia Artificial:** Como esta actividad tiene una **puntuación final**, te pedimos que seas honesto con tu aprendizaje. Puedes usar IA (como ChatGPT, Gemini o Claude) **ÚNICA Y EXCLUSIVAMENTE** para hacer preguntas, entender conceptos o pedir pistas (ej: "¿Cómo funciona un ciclo for en Java?"). **NO** uses la IA para que te genere el código resuelto.
 3. 🚫 **¡PROHIBIDO USAR IA PARA GIT!** No puedes usar IA para que te dicte los comandos de Git, ni para que escriba tus mensajes de commit. El objetivo de la actividad es que memorices y apliques Git. Debes usar tu propia memoria y el `assets/varita_git.md`.
 
-### 📝 Reto 10: El Pensadero y la Graduación (Pull Request)
-Al finalizar todos los retos de código, deberás enviar tu trabajo final al Gran Mago original mediante un **Pull Request**.
-1. Copia el archivo `PLANTILLA_ENTREGA.md` y pega la copia **dentro de la carpeta** `magos_graduados/`.
-2. Renombra la copia con tu nombre completo en mayúsculas (ejemplo: `magos_graduados/JUAN_PEREZ_GOMEZ.md`).
-3. Responde a las preguntas de graduación dentro de tu nuevo archivo.
-4. Haz `add`, `commit` y `push`.
-5. Ve a tu repositorio en GitHub y abre un **Pull Request** hacia el repositorio original del colegio. *(Si no sabes cómo, consulta la [Guía de Pull Request (`assets/guia_pull_request.md`)](assets/guia_pull_request.md))*.
+### 📝 Reto 10: Líneas Temporales 🌿 y El Pensadero 💭 (Pull Request Final)
+Al finalizar todos los retos de código, deberás enviar tu trabajo final al Gran Mago original mediante un **Pull Request** usando una rama distinta a la principal.
+1. En tu terminal, crea una nueva rama (línea temporal) y cámbiate a ella: `git checkout -b graduacion` (o usa `git branch graduacion` y luego `git checkout graduacion`).
+2. Haz una copia del archivo `PLANTILLA_ENTREGA.md` y pégala **dentro de la carpeta** `magos_graduados/`.
+3. Renombra la copia con tu nombre completo en mayúsculas (ejemplo: `magos_graduados/JUAN_PEREZ_GOMEZ.md`).
+4. Responde a las preguntas de graduación dentro de tu nuevo archivo.
+5. Sube tu archivo a tu nueva rama con `git add .`, `git commit -m "feat: graduacion completada"` y finalmente `git push origin graduacion`.
+6. Ve a tu repositorio en GitHub y abre un **Pull Request** hacia el repositorio original del colegio. *(Si no sabes cómo, consulta la [Guía de Pull Request (`assets/guia_pull_request.md`)](assets/guia_pull_request.md))*.
 
 ¡Que la magia del código te acompañe!
 
