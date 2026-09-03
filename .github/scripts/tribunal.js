@@ -82,8 +82,32 @@ module.exports = async ({github, context}) => {
     if (openIssues.length === 0) {
         const { data: closedIssues } = await github.rest.issues.listForRepo({ owner, repo, state: 'closed' });
         if (closedIssues.length === 0) {
-            console.log("Es el inicio de la aventura. Creando el Reto 1.");
-            await github.rest.issues.create({ owner, repo, title: RETOS[0].title, body: RETOS[0].body });
+            console.log("Es el inicio de la aventura. Evaluando el Reto 1 sin issue abierto.");
+            const testReportPath = path.join('target', 'surefire-reports', RETOS[0].testFile);
+            let testPassed = false;
+            
+            if (fs.existsSync(testReportPath)) {
+                const reportContent = fs.readFileSync(testReportPath, 'utf8');
+                if (reportContent.includes('Failures: 0') && reportContent.includes('Errors: 0')) {
+                    testPassed = true;
+                }
+            }
+            
+            if (testPassed) {
+                console.log("¡Hechizo de iniciación superado! Abriendo Reto 2.");
+                await github.rest.issues.create({ 
+                    owner, repo, 
+                    title: RETOS[1].title, 
+                    body: "✅ **¡Has despertado al Tribunal Mágico con éxito y tu Hechizo de Iniciación fue perfecto!**\n\nBienvenido oficialmente.\n\n---\n\n" + RETOS[1].body 
+                });
+            } else {
+                console.log("El Hechizo de iniciación falló. Abriendo el Reto 1.");
+                await github.rest.issues.create({ 
+                    owner, repo, 
+                    title: RETOS[0].title, 
+                    body: "❌ **¡Has despertado al Tribunal Mágico, pero notamos fallas en tu primer hechizo!**\n\nAsegúrate de completar bien el código y pasar las pruebas locales antes de hacer push para superar esto.\n\n---\n\n" + RETOS[0].body 
+                });
+            }
             return;
         } else {
             console.log("Ya se completaron todos los retos o no hay issues activos. Todo listo.");

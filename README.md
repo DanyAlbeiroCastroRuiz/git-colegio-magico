@@ -12,7 +12,8 @@ Para graduarte, deberás superar **10 retos mágicos**. Cada reto pondrá a prue
     git clone https://github.com/TU_USUARIO/ActividadGit.git
     cd ActividadGit
     ```
-3.  **Consulta el Grimorio:** Antes de empezar, lee detenidamente los pergaminos en la carpeta `assets/`:
+3.  **Despierta la Magia del Tribunal (GitHub Actions):** Al hacer tu copia (*Fork*), los encantamientos automáticos estarán desactivados. ¡Debes encenderlos para ser evaluado! Sigue las instrucciones en el pergamino [Activar la Magia (`assets/activar_magia.md`)](assets/activar_magia.md) antes de lanzar tu primer hechizo.
+4.  **Consulta el Grimorio:** Antes de empezar, lee detenidamente los pergaminos en la carpeta `assets/`:
     *   [Varita Git (`assets/varita_git.md`)](assets/varita_git.md): Una guía rápida con los comandos mágicos que necesitarás (`git add`, `git commit`, `git push`).
     *   [Grimorio de Commits (`assets/grimorio_commits.md`)](assets/grimorio_commits.md): Las reglas de la Academia sobre cómo registrar tus hechizos correctamente.
 
@@ -32,9 +33,9 @@ Para superar un reto, debes completar el código de forma que las **Pruebas Auto
 Cada vez que resuelvas un reto, debes hacer un **commit** y luego un **push** a tu repositorio. ¡El Gran Tribunal de GitHub Actions revisará tus hechizos automáticamente!
 
 ### 🧙‍♂️ Reto 1: El Hechizo de Iniciación (`reto1.HechizoIniciacion`)
-Antes de aprender a invocar fuego, el Gran Mago debe saber tu nombre.
-*   **Misión:** Abre `HechizoIniciacion.java` y completa el método `invocar()` para que devuelva una cadena con tu nombre y el nombre de tu profesor.
-*   **Git:** Haz un commit usando la convención correcta y súbelo.
+¡Este es el hechizo que despertará al Tribunal Mágico! Al completarlo y enviarlo, el Tribunal evaluará tu magia y comenzará a enviarte los siguientes retos (a partir del Reto 2) directamente a tu **Buzón (Issues)**.
+*   **Misión:** Abre `src/main/java/com/colegiomagico/reto1/HechizoIniciacion.java` y completa el método `invocar()` para que devuelva una cadena con tu nombre y el nombre de tu profesor.
+*   **Git:** Haz un `git add`, tu primer `git commit` (usando una convención como `feat: ...`) y luego un `git push`. ¡Al hacer esto, despertarás al Tribunal Mágico!
 
 ### ➕ Reto 2: Aritmancia Básica
 La magia requiere precisión matemática.
