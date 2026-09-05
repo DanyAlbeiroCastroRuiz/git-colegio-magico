@@ -6,7 +6,7 @@ package com.colegiomagico.reto9;
 public class InvocacionFamiliar {
 
     public static String invocar(String nombre, String tipo) {
-        return ""; // TODO: Cambia esto
+        return "Familiar: "+tipo+" llamado "+nombre; //
     }
 
     public static void main(String[] args) {
