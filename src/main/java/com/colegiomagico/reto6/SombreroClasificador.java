@@ -11,7 +11,7 @@ public class SombreroClasificador {
                 return "Valentia";
             case "Ravenclaw":
                 return "Inteligencia";
-                default:
+            default:
                 return "Desconocido";
         }
         
